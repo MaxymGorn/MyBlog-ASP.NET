@@ -22,6 +22,7 @@
         public DbSet<Contact_Details> Contact_Details { get; set; }
         public DbSet<ProjectSClientsS> ProjectSClientsSes { get; set; }
         public DbSet<WHAT_CAN__I_DO> wHAT_CAN__I_DOs { get; set; }
+        public DbSet<Expirience> Expiriences { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             Database.SetInitializer<Context>(null);

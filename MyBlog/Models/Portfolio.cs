@@ -15,5 +15,13 @@ namespace MyBlog.Models
         [Required]
         public int TypeId { get; set; }
         public virtual Type Type { get; set; }
+        [Required]
+        [StringLength(50)]
+        public string Name { get; set; }
+        [Required]
+        [StringLength(500)]
+        public string Text { get; set; }
+ 
+
     }
 }

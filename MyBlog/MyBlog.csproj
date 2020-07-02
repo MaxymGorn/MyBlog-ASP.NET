@@ -283,7 +283,8 @@
     <Content Include="Entry.aspx" />
     <Content Include="images\background\contact_imag.jpg" />
     <Content Include="images\background\facts-bg.jpg" />
-    <Content Include="images\background\portfolio1_image.jpg" />
+    <Content Include="images\background\portfolio.jpg" />
+    <Content Include="images\background\portfolio1_.image.jpg" />
     <Content Include="images\background\profile1_image.jpg" />
     <Content Include="images\background\resume1_image.jpg" />
     <Content Include="images\background\story1_bg.jpg" />
@@ -323,7 +324,6 @@
     <Content Include="library\easy-pie-charts\jquery.easypiechart.min.js" />
     <Content Include="library\font-awesome\css\font-awesome.min.css" />
     <Content Include="library\font-awesome\fonts\fontawesome-webfont.svg" />
-    <Content Include="library\gMap\jquery.gmap.min.js" />
     <Content Include="library\jquery-easing\jquery.easing.min.js" />
     <Content Include="library\mixitup\jquery.mixitup.min.js" />
     <Content Include="library\modernizr\modernizr.js" />
@@ -370,15 +370,28 @@
     <Compile Include="Entry.aspx.designer.cs">
       <DependentUpon>Entry.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202003300547572_MigrateDB.cs" />
-    <Compile Include="Migrations\202003300547572_MigrateDB.Designer.cs">
-      <DependentUpon>202003300547572_MigrateDB.cs</DependentUpon>
+    <Compile Include="Migrations\202006250951286_secondmig.cs" />
+    <Compile Include="Migrations\202006250951286_secondmig.Designer.cs">
+      <DependentUpon>202006250951286_secondmig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006250953421_secondmig1.cs" />
+    <Compile Include="Migrations\202006250953421_secondmig1.Designer.cs">
+      <DependentUpon>202006250953421_secondmig1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006250955066_secondmig2.cs" />
+    <Compile Include="Migrations\202006250955066_secondmig2.Designer.cs">
+      <DependentUpon>202006250955066_secondmig2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006251004220_secondmig3.cs" />
+    <Compile Include="Migrations\202006251004220_secondmig3.Designer.cs">
+      <DependentUpon>202006251004220_secondmig3.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Contact Details.cs" />
     <Compile Include="Models\Contact.cs" />
     <Compile Include="Models\Context.cs" />
     <Compile Include="Models\Education.cs" />
+    <Compile Include="Models\Expirience.cs" />
     <Compile Include="Models\Feedback.cs" />
     <Compile Include="Models\Images.cs" />
     <Compile Include="Models\Portfolio.cs" />
@@ -415,9 +428,9 @@
     <Content Include="library\font-awesome\fonts\FontAwesome.otf" />
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
-    <Content Include="php\contact.php" />
-    <Content Include="php\email_config.php" />
-    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\FTPProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\MaxsGornBlog - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\MyBlog20200702013604 - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -426,8 +439,17 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202003300547572_MigrateDB.resx">
-      <DependentUpon>202003300547572_MigrateDB.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202006250951286_secondmig.resx">
+      <DependentUpon>202006250951286_secondmig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006250953421_secondmig1.resx">
+      <DependentUpon>202006250953421_secondmig1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006250955066_secondmig2.resx">
+      <DependentUpon>202006250955066_secondmig2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006251004220_secondmig3.resx">
+      <DependentUpon>202006251004220_secondmig3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
@@ -447,10 +469,11 @@
           <DevelopmentServerPort>50548</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:50548/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:50548/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
-          <CustomServerUrl>
-          </CustomServerUrl>
+          <CustomServerUrl>https://myblog20200401065841.azurewebsites.net/</CustomServerUrl>
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>

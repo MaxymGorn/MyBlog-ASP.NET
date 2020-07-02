@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCompany("Maxs Gorn")]
 [assembly: AssemblyProduct("MyBlog")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("Max Corp")]
 [assembly: AssemblyCulture("")]
 
 // Установка значения false в параметре ComVisible делает типы в этой сборке невидимыми 
